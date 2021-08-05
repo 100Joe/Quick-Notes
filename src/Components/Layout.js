@@ -11,23 +11,29 @@ import { AddCircleOutlineOutlined, SubjectOutlined } from '@material-ui/icons'
 
 const drawerWidth = 240
 
-const useStyles = makeStyles({
-  page: {
-    background: '#f9f9f9',
-    width: '100%',
-  },
-  root: {
-    display: 'flex',
-  },
-  drawer: {
-    width: drawerWidth,
-  },
-  drawerPaper: {
-    width: drawerWidth,
-  },
-  active: {
-    background: '#f4f4f4'
-  },
+const useStyles = makeStyles((theme) => {
+  return {
+    page: {
+      background: '#f9f9f9',
+      width: '100%',
+      padding: theme.spacing(3)
+    },
+    root: {
+      display: 'flex',
+    },
+    drawer: {
+      width: drawerWidth,
+    },
+    drawerPaper: {
+      width: drawerWidth,
+    },
+    active: {
+      background: '#f4f4f4'
+    },
+    title: {
+      padding: theme.spacing(2)
+    }
+  }
 })
 
 export default function Layout({ children }) {
@@ -61,7 +67,7 @@ export default function Layout({ children }) {
       >
         <div>
           <Typography variant="h5" className={classes.title}>
-            Ninja Notes
+            Joseph's Notes
           </Typography>
         </div>
 
