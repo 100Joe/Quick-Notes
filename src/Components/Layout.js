@@ -11,6 +11,7 @@ import { AddCircleOutlineOutlined, SubjectOutlined } from '@material-ui/icons'
 import AppBar from '@material-ui/core/AppBar';
 import ToolBar from '@material-ui/core/ToolBar';
 import { format } from 'date-fns';
+import Avatar from '@material-ui/core/Avatar';
 
 const drawerWidth = 240
 
@@ -42,6 +43,9 @@ const useStyles = makeStyles((theme) => {
     toolbar: theme.mixins.toolbar,
     date: {
       flexGrow: 1
+    },
+    avatar: {
+      marginLeft: theme.spacing(2)
     }
   }
 })
@@ -79,6 +83,7 @@ export default function Layout({ children }) {
           <Typography>
             Joseph
           </Typography>
+          <Avatar src='../images/LinkedIn.jpg' className={classes.avatar} />
         </ToolBar>
       </AppBar>
 
