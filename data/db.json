@@ -1,0 +1,28 @@
+{
+  "notes": [
+    {
+      "title": "Finish goal",
+      "details": "Complete Net Ninjas Material UI tut",
+      "category": "work",
+      "id": 1
+    },
+    {
+      "title": "Go to bed",
+      "details": "Time to get some sleep you have been beast mode all day",
+      "category": "reminder",
+      "id": 2
+    },
+    {
+      "title": "eat breakfast",
+      "details": "Eat a filling breakfast",
+      "category": "todos",
+      "id": 3
+    },
+    {
+      "title": "Joe",
+      "details": "Joes grad party ",
+      "category": "reminders",
+      "id": 4
+    }
+  ]
+}
