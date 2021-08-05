@@ -1,7 +1,8 @@
 import Typography from "@material-ui/core/Typography";
 import Button from '@material-ui/core/Button';
 import Container from '@material-ui/core/Container'
-
+import SendIcon from '@material-ui/icons/Send';
+import { KeyboardArrowRight } from "@material-ui/icons";
 
 function Create() {
   return (
@@ -20,6 +21,7 @@ function Create() {
         type="submit"
         color="secondary"
         variant="contained"
+        endIcon={<KeyboardArrowRight />}
       >
         Submit
       </Button>
@@ -32,6 +34,15 @@ function Create() {
         <Button>two</Button>
         <Button>three</Button>
       </ButtonGroup> */}
+
+      {/* Icons */}
+      <br />
+      {/* <AcUnitOutlinedIcon />
+      <AcUnitOutlinedIcon color="secondary" fontSize="large" />
+      <AcUnitOutlinedIcon color="secondary" fontSize="small" />
+      <AcUnitOutlinedIcon color="action" fontSize="small" />
+      <AcUnitOutlinedIcon color="error" fontSize="small" />
+      <AcUnitOutlinedIcon color="disable" fontSize="small" /> */}
     </Container>
   )
 }
