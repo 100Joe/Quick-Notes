@@ -3,21 +3,21 @@ import CardHeader from '@material-ui/core/CardHeader';
 import CardContent from '@material-ui/core/CardContent';
 import { DeleteOutline } from '@material-ui/icons';
 import { Avatar, IconButton, makeStyles, Typography } from '@material-ui/core';
-import { yellow, green, pink, blue } from '@material-ui/core/colors';
+import { green, blue, red, purple } from '@material-ui/core/colors';
 
 const useStyles = makeStyles({
   avatar: {
     backgroundColor: (note) => {
       if (note.category == 'work') {
-        return yellow[700]
+        return blue[900]
       }
       if (note.category == 'money') {
-        return green[500]
+        return green[800]
       }
       if (note.category == 'todos') {
-        return pink[500]
+        return red[900]
       }
-      return blue[500]
+      return purple[500]
     }
   }
 })
