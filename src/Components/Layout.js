@@ -9,7 +9,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon'
 import ListItemText from '@material-ui/core/ListItemText'
 import { AddCircleOutlineOutlined, SubjectOutlined } from '@material-ui/icons'
 import AppBar from '@material-ui/core/AppBar';
-import ToolBar from '@material-ui/core/ToolBar';
+import Toolbar from '@material-ui/core/Toolbar';
 import { format } from 'date-fns';
 import Avatar from '@material-ui/core/Avatar';
 
@@ -76,7 +76,7 @@ export default function Layout({ children }) {
         className={classes.appbar}
         elevation={0}
       >
-        <ToolBar>
+        <Toolbar>
           <Typography className={classes.date}>
             Today is the {format(new Date(), 'do MMMM Y')}
           </Typography>
@@ -84,7 +84,7 @@ export default function Layout({ children }) {
             Joseph
           </Typography>
           <Avatar src='../images/LinkedIn.jpg' className={classes.avatar} />
-        </ToolBar>
+        </Toolbar>
       </AppBar>
 
       {/* side drawer */}
