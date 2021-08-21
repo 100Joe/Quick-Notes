@@ -8,13 +8,13 @@ import { green, blue, red, purple } from '@material-ui/core/colors';
 const useStyles = makeStyles({
   avatar: {
     backgroundColor: (note) => {
-      if (note.category == 'work') {
+      if (note.category === 'work') {
         return blue[900]
       }
-      if (note.category == 'money') {
+      if (note.category === 'money') {
         return green[800]
       }
-      if (note.category == 'todos') {
+      if (note.category === 'todos') {
         return red[900]
       }
       return purple[500]

@@ -18,7 +18,7 @@ function Notes() {
     await fetch('http://localhost:8000/notes/' + id, {
       method: 'DELETE'
     })
-    const newNotes = notes.filter(note => note.id != id)
+    const newNotes = notes.filter(note => note.id !== id)
     setNotes(newNotes)
   }
 
